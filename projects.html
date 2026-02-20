@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects & Contact - Emre Efe Yüksel</title>
+</head>
+<body>
+
+    <header><!--Navbar&Header-->
+        <h1>Emre Efe Yüksel</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="education.html">Education & Skills</a> | 
+            <a href="projects.html">Projects & Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section><!--Project Section-->
+            <h2>My Projects</h2>
+            
+            <article>
+                <h3>OutreachAI</h3>
+                <p>A web application built collaboratively that automates cold email campaigns using n8n and Artificial Intelligence.</p>
+            </article>
+
+            <article>
+                <h3>Surface Defect Detection via AI</h3>
+                <p>An image processing and AI group project aimed at detecting surface defects on textile products.</p>
+            </article>
+
+            <article>
+                <h3>Cell Counting Project</h3>
+                <p>A desktop-based image processing application developed to accurately count cells in given sample images.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section> <!--Yapay zekalar çıkmadan önce böyle html yazan herkese tebriklerimi sunuyorum-->
+            <h2>Contact Me</h2>
+            <form action="mailto:emreefeyuksel@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Send a Message:</legend>
+                    
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+
+                    <label for="reason">Reason for contact:</label><br>
+                    <input list="reasons" id="reason" name="reason">
+                    <datalist id="reasons">
+                        <option value="Job Opportunity">
+                        <option value="Project Collaboration">
+                        <option value="FRP/Gaming Chat">
+                        <option value="Other">
+                    </datalist><br><br>
+
+                    <label>Preferred contact method:</label><br>
+                    <input type="radio" id="contact_email" name="contact_pref" value="Email">
+                    <label for="contact_email">Email</label>
+                    <input type="radio" id="contact_linkedin" name="contact_pref" value="LinkedIn">
+                    <label for="contact_linkedin">LinkedIn</label><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Emre Efe Yüksel.</p>
+    </footer>
+
+</body>
+</html>
